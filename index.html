@@ -5,10 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>The Best Quiz Game </title>
-    <link rel="stylesheet" href="style.css"
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 </head>
 <body>
+    <div>
+        <!-- <h5 id = highscores>view highscores</h5> -->
+        <h5><button id = highscores type="button" class="answerBtn btn btn-outline-primary">View Highscores</button></h5>
+        <h5 id = timeRemaining>time remaining: </h5>
+    </div>
     
+    <div class="container">
+        <div class="questionContainer">
+            <h1 id = question > Click the start button to begin!</h1>
+            <h3><button id = start type="button" class="btn btn-outline-primary">START</button></h3>
+        </div>
+    
+
+    <div id = answerContainer>
+
+    <h3><button id = answer1 type="button" class="answerBtn btn btn-outline-primary"> 1</button></h3>
+    <h3><button id = answer2 type="button" class="answerBtn btn btn-outline-primary"> 2</button></h3>
+    <h3><button id = answer3 type="button" class="answerBtn btn btn-outline-primary"> 3</button></h3>
+    <h3><button id = answer4 type="button" class="answerBtn btn btn-outline-primary"> 4</button></h3>
+    
+    </div>
+
+    </div>
+
     <script src="./script.js"></script>
 </body>
+
 </html>
