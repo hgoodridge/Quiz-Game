@@ -1,7 +1,7 @@
 var timeRemaining = document.querySelector("#timeRemaining")
 var gameOver = document.querySelector(".questionContainer")
 var question = document.querySelector("#question")
-var HighScores = document.querySelector("#Highscores")
+var HighScores = document.querySelector("#HighScores")
 var start = document.querySelector("#start")
 var q1 = document.querySelector("#answer1")
 var q2 = document.querySelector("#answer2")
@@ -10,7 +10,7 @@ var q4 = document.querySelector("#answer4")
 
 var allAns = document.querySelectorAll(".answerBtn")
 var tracker = 0;
-var HighScores = 0;
+var highScores = 0;
 
 function hideBtn() {
     button.style.display = "none";
@@ -26,7 +26,7 @@ for (var i = 0; i < allAns.length; i++) {
             alert("Correct!");
             ++tracker;
             displayQ();
-            HighScores++;
+            highScores++;
         }
 
         else {
@@ -38,6 +38,11 @@ for (var i = 0; i < allAns.length; i++) {
         }
     })
 
+    if(tracker === 2 ) {
+        alert("Game over!")
+        clearInterval(intevalId)
+        
+    }
     
 
     var questions = [
