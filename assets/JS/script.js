@@ -36,8 +36,8 @@ function highScore(){
         cheese = localStorage.setItem("highscore",score)
         ramen = localStorage.setItem("nickname", high.value)
 
-        console.log(high.value)
-        console.log(localStorage)
+       
+        
     })
     
 }
@@ -56,7 +56,7 @@ for (var i = 0; i < allAns.length; i++) {
             
             
         }
-        console.log(tracker)
+        
         
         if (this.textContent === questions[tracker].answer) {
             alert("Correct!");
@@ -146,7 +146,7 @@ for (var i = 0; i < allAns.length; i++) {
         q4.textContent = questions[tracker].choices[3]
         }
         else{
-            console.log("game over")
+            
             clearInterval(intevalId)
         }
         
@@ -156,7 +156,7 @@ for (var i = 0; i < allAns.length; i++) {
         displayQ()
         hideBtn()
         
-        secondsLeft = 5
+        secondsLeft = 90
         intevalId = setInterval(function () {
             timeRemaining.textContent = " Time remaining: "+ secondsLeft;
             secondsLeft--;
