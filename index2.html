@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Highscores</title>
+</head>
+<body>
+    <div>
+        <h1 id = highscores>High Scores!</h1>
+        
+        
+
+    </div>
+    <script>
+        var highscoreText = document.querySelector("#highscores")
+
+        for(i = 0; i < localStorage.length; i++) {
+            var nickname = document.createElement("h5")
+            nickname.textContent = localStorage.nickname + ":" + localStorage.highscore
+            highscoreText.appendChild(nickname)
+            
+        }
+    </script>
+</body>
+</html>
